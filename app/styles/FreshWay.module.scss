@@ -164,7 +164,7 @@ text-align: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 
     &:nth-child(odd) {
       .freshWay__content {
@@ -198,6 +198,11 @@ text-decoration-skip-ink: none;
 color: #858585;
 
     }
+  }
+  &__imageT {
+    width: 75% !important;
+    height: auto;
+    border-radius: 24px;
   }
 }
 

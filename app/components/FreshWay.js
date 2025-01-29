@@ -63,13 +63,13 @@ export default function FreshWay() {
             <div className={styles.freshWay__type}>
               <div className={styles.freshWay__content}>
                 <h3>for the one's that don't<br />have an existing account<br />with the bank</h3>
-                <p>For the users who do not have to existing account with the bank and would like to send money abroad. Here is the solution where they can create an account with the bank and start sending money to their loved ones. The process is very simple and can be handled on the platform.</p>
+                <p>For the users who did not have an existing account with the bank can mow split the payments as in pay 5% and the rest could be paid offline or online via RTGS and avail a Physical KYC escaping the digital hassle and pay directly in the branch and the status will be updated on the platform.</p>
               </div>
               <div className={styles.freshWay__phone}>
                 <img 
-                  src="https://images.unsplash.com/photo-1581291518484-8d11f356e937?auto=format&fit=crop&w=600&q=80" 
+                  src="/assets/tailored1.png" 
                   alt="Non-existing account interface"
-                  className={styles.freshWay__image}
+                  className={styles.freshWay__imageT}
                 />
               </div>
             </div>
@@ -77,14 +77,14 @@ export default function FreshWay() {
             <div className={styles.freshWay__type}>
               <div className={styles.freshWay__phone}>
                 <img 
-                  src="https://images.unsplash.com/photo-1581291518744-5ae5c9a3f1f4?auto=format&fit=crop&w=600&q=80" 
+                  src="/assets/tailored2.png" 
                   alt="Existing account interface"
-                  className={styles.freshWay__image}
+                  className={styles.freshWay__imageT}
                 />
               </div>
               <div className={styles.freshWay__content}>
-                <h3>for the one's that have an<br />existing bank account<br />with the bank</h3>
-                <p>The users in case who were existing with the bank would have the ease to use the app right away. They can directly be authenticated with their existing bank details and start sending money to their loved ones. The process is very simple and can be handled on the platform.</p>
+                <h3 style={{textAlign: "end"}}>for the one's that have an<br />existing bank account<br />with the bank</h3>
+                <p style={{textAlign: "end"}}>The cohort of users who were smart and could find their account in the banks do not need a KYC, they can avail all the services without getting in the hassle of KYC and simply process the payment. Even if they choose to go with another bank the KYC is just 2 clicks to validation.</p>
               </div>
             </div>
           </div>
