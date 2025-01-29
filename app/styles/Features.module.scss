@@ -1,0 +1,100 @@
+.features {
+  padding: 2rem 0;
+
+  &__title {
+    font-family: PP Cirka;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #181717;
+  }
+
+  &__subtitle {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7c7c7c;
+    margin: 24px 0px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 4rem;
+    // max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    background: #efefef;
+    border-radius: 24px;
+    justify-content: space-between;
+    gap: 24px;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__number {
+    font-family: var(--font-cirka);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a1a1a;
+  }
+
+  &__cardTitle {
+    font-family: Rubik;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1a1a1a;
+  }
+
+  &__description {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #454545;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__grid {
+      gap: 3rem;
+    }
+
+    &__number {
+      font-size: 4rem;
+    }
+
+    &__cardTitle {
+      font-size: 1.75rem;
+    }
+  }
+}
