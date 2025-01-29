@@ -1,0 +1,216 @@
+.features {
+  padding: 8rem 0;
+  background: #000000;
+  color: #fff;
+  font-family: "PP Cirka", serif;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    //   max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    //   background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    //   padding: 2rem;
+    //   transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      background: linear-gradient(to right, #fff, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &__content2 {
+    position: relative;
+    z-index: 2;
+    // margin-bottom: 2rem;
+    padding: 8rem 0 0 0;
+    height: 100vh;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      background: linear-gradient(to right, #fff, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  &__features2 {
+    background-image: url("/assets/payBG.png");
+    background-size: cover;
+  }
+  &__title2 {
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: Rubik, sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  &__text2 {
+    width: 44%;
+    p {
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__mobs {
+    position: relative;
+    bottom: 306px;
+    img {
+      position: relative;
+      right: -35%;
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      // bottom: 300px;
+    }
+  }
+  &__phone {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      // box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__features3{
+    padding: 4rem 0;
+    background: #fff;
+    color: #000000;
+  font-family: "PP Cirka", serif;
+  position: relative;
+  }
+  &__title3 {
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-family: "PP Cirka", serif;
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  &__text3 {
+    width: 44%;
+    p {
+      line-height: 1.6;
+      color: #222222B2;
+      margin-bottom: 1.5rem;
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .features {
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__content {
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__grid {
+      gap: 2rem;
+    }
+
+    &__content {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

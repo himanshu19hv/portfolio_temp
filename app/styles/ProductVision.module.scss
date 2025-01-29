@@ -1,0 +1,56 @@
+.vision {
+  padding: 2rem 0;
+
+  &__title {
+    font-family: PP Cirka;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 58.88px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #222;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin: 24px 0px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__text {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #606060;
+  }
+
+  &__highlight {
+    color: #222;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  &__image {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

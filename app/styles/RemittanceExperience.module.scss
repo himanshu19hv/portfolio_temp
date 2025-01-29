@@ -1,0 +1,121 @@
+.experience {
+  padding: 8rem 0;
+  // background: linear-gradient(to bottom, #000066, #1a0033);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-cirka);
+  background-image: url("/assets/remExpBG.png");
+  background-size: cover;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: radial-gradient(circle at center, rgba(128, 0, 255, 0.2), transparent);
+  //   pointer-events: none;
+  // }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+    perspective: 1000px;
+  }
+
+  &__phone {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 48px;
+    padding: 1rem;
+    width: 300px;
+    transform: rotate(-15deg) translateY(40px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: rotate(-15deg) translateY(30px);
+    }
+
+    &_middle {
+      transform: translateY(-40px);
+      z-index: 3;
+
+      &:hover {
+        transform: translateY(-50px);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 36px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &:last-child {
+      transform: rotate(15deg) translateY(40px);
+
+      &:hover {
+        transform: rotate(15deg) translateY(30px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__phone {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__phones {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    &__phone {
+      transform: none !important;
+      width: 280px;
+
+      &:hover {
+        transform: translateY(-10px) !important;
+      }
+
+      &_middle {
+        transform: none !important;
+
+        &:hover {
+          transform: translateY(-10px) !important;
+        }
+      }
+    }
+  }
+}

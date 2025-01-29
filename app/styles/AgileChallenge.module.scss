@@ -1,0 +1,247 @@
+.challenge {
+  padding: 8rem 0;
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+  color: #fff;
+  font-family: var(--font-cirka);
+  position: relative;
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 68px;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  &__description,
+  &__subtext {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #999;
+    margin-bottom: 2rem;
+    max-width: 900px;
+    position: relative;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  &__card {
+    background: #191919;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    position: relative;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 110px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    // &::before {
+    //   content: "";
+    //   position: relative;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   background: radial-gradient(
+    //     circle at top right,
+    //     rgba(255, 255, 255, 0.1),
+    //     transparent
+    //   );
+    //   pointer-events: none;
+    // }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    h3 {
+      font-family: Rubik, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 45px;
+      text-align: left;
+      text-underline-position: from-font;
+      color: #FFFFFF;
+
+      margin-bottom: 1.5rem;
+      // background: linear-gradient(to right, #fff, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+
+    p {
+      font-family: Rubik, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 45px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      color: #FFFFFF;
+      position: relative;
+    }
+  }
+
+  &__number {
+    font-family: PP Cirka;
+    font-size: 178px;
+    font-weight: 700;
+    line-height: 163.76px;
+    text-align: left;    
+    color: #fff;
+    position: relative;
+    letter-spacing: -0.02em;
+  }
+
+  &__and {
+    color: #656565;
+    font-weight: 400;
+  }
+
+  &__dim {
+    color: #656565;
+  }
+
+  &__conclusion {
+    font-family: Rubik, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #9D9D9D;
+    margin: 4rem 0;
+    max-width: 900px;
+    position: relative;
+  }
+
+  &__timeline {
+    position: relative;
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  &__stage {
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.03)
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    transform: rotate(-5deg);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: rotate(-5deg) translateY(-5px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__stageContent {
+    transform: rotate(5deg);
+  }
+
+  &__stageNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__stageTitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  &__stageDesc {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4.25rem;
+    height: 4.25rem;
+    color: rgb(0 0 0);
+    transition: all 0.3s ease;
+    background: #fff;
+    border-radius: 32px;
+
+    &:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .challenge {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+
+    &__timeline {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .challenge {
+    &__timeline {
+      grid-template-columns: 1fr;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__card {
+      padding: 2rem;
+    }
+  }
+}

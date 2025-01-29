@@ -1,0 +1,240 @@
+.freshWay {
+  padding: 8rem 0;
+  // background: linear-gradient(135deg, #000022, #000066);
+  color: #fff;
+  font-family: "PP Cirka", serif;
+  position: relative;
+  overflow: hidden;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=2000&q=80') no-repeat center center;
+  //   opacity: 0.1;
+  //   filter: blur(100px);
+  //   z-index: 1;
+  // }
+
+  &__tag {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    font-family: Rubik, sans-serif;
+  }
+
+  &__title,
+  &__subtitle {
+    font-family: PP Cirka;
+    font-size: 94px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 4rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__present1{
+    margin-bottom: 8rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #011E50;
+    // position: absolute;
+    border-radius: 24px;
+    width: 60%;
+    position: absolute;
+    bottom: 4%;
+    right: 0%;
+  }
+
+  &__features {
+    // display: grid;
+    gap: 4rem;
+  }
+  &__vector{
+    background-image: url("/assets/vectorbg.png");
+    height: 100%;
+    background-size: cover;
+    border-radius: 24px;
+  }
+
+  &__featureItem {
+    // background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      // background: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__phone {
+    // background: rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    // padding: 1rem;
+    // margin-bottom: 1.5rem;
+    // box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    z-index: 22;
+    position: relative;
+
+
+    
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+    }
+  }
+  &__image {
+    width: 55% !important;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  &__card {
+    // background: rgba(0, 0, 255, 0.2);
+    border-radius: 24px;
+    padding: 2rem;
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      text-align: right;
+      font-family: Rubik, sans-serif;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 70px;
+      text-align: right;
+
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      text-align: right;
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+font-weight: 400;
+line-height: 19.6px;
+text-align: right;
+
+
+    }
+  }
+
+  &__remittance {
+    padding: 8rem 0;
+    background-color: #020202;
+  }
+
+  &__types {
+    display: grid;
+    gap: 6rem;
+  }
+
+  &__type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    &:nth-child(odd) {
+      .freshWay__content {
+        order: 1;
+      }
+      .freshWay__phone {
+        order: 2;
+      }
+    }
+  }
+
+  &__content {
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+      font-family: Rubik, sans-serif;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.125rem;
+      font-family: Rubik, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #858585;
+
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .freshWay {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__type {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .freshWay__content,
+      .freshWay__phone {
+        order: unset !important;
+      }
+    }
+
+    &__title,
+    &__subtitle {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .freshWay {
+    &__title,
+    &__subtitle {
+      font-size: 2.5rem;
+    }
+
+    &__content {
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
