@@ -19,7 +19,6 @@
   // }
 
   &__title {
-    font-size: 4rem;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -27,6 +26,7 @@
     line-height: 1.2;
     position: relative;
     z-index: 2;
+    font-size: 94px;
   }
 
   &__phones {

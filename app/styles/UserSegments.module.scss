@@ -38,9 +38,10 @@ color: #7C7C7C;
     background: #EFEFEF;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    min-height: 390px;
 
     &:hover {
       transform: translateY(-5px);

@@ -13,6 +13,7 @@ import EnhancedJourney from './components/EnhancedJourney';
 import Seamless from './components/Seamless';
 import UserJourney from './components/UserJourney';
 import Challenges from './components/Challenges';
+import Footer from './components/Footer';
 export default function Home() {
   return (
     <main>
@@ -29,6 +30,7 @@ export default function Home() {
       <Seamless />
       <UserJourney />
       <Challenges />
+      <Footer />
     </main>
   );
 }

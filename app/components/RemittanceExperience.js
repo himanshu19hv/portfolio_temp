@@ -1,15 +1,19 @@
 'use client';
 
 import styles from '../styles/RemittanceExperience.module.scss';
-
+import ScrollAnimation from "@/node_modules/react-animate-on-scroll";
+import "animate.css/animate.compat.css"
 export default function RemittanceExperience() {
   return (
     <section className={styles.experience}>
       <div className="container">
+      <ScrollAnimation animateIn='fadeInUp' animateOut='fadeInUp' animateOnce>
         <h2 className={styles.experience__title}>
           A no nonsense<br />remittance experience
         </h2>
+        </ScrollAnimation>
         
+        <ScrollAnimation animateIn='fadeInUp' animateOut='fadeInUp' animateOnce>
         <div className={styles.experience__phones}>
         <img 
               src="/assets/remExp.png" 
@@ -17,6 +21,7 @@ export default function RemittanceExperience() {
               // className={styles.experience__image}
             />
           </div>
+          </ScrollAnimation>
           {/* <div className={styles.experience__phone}>
             <img 
               src="/assets/remExp.png" 
