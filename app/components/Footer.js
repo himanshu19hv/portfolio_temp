@@ -19,9 +19,9 @@ export default function Footer() {
 
           <div className={styles.footer__links}>
             <div className={styles.footer__group}>
-              <Link href="/">Medium</Link>
-              <Link href="/">Behance</Link>
-              <Link href="/">Dribble</Link>
+              <Link href="https://medium.com/@utkarshraj7540">Medium</Link>
+              <Link href="https://www.behance.net/utkarshraj1">Behance</Link>
+              <Link href="https://dribbble.com/utkarshraj7540">Dribble</Link>
             </div>
           </div>
         </div>
