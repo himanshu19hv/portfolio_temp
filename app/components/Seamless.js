@@ -111,7 +111,6 @@ export default function NewFeatures() {
                   src="/assets/payTwin.png"
                   alt="2 step KYC interface"
                   className={styles.features__image}
-                  style={{ width: "70%" }}
                 />
               </div>
             </ScrollAnimation>

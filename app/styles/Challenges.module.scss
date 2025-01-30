@@ -1,5 +1,5 @@
 .features2 {
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 3rem 0;
   color: #fff;
   font-family: Rubik, sans-serif;
@@ -14,7 +14,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #1A1A1A;
+    color: #1a1a1a;
     margin-bottom: 2rem;
   }
 
@@ -53,20 +53,19 @@
     position: relative;
     overflow: hidden;
   }
-  &__button{
+  &__button {
     font-family: Rubik, sans-serif;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-padding: 20px;
-gap: 10px;
-border-radius: 58px;
-opacity: 0px;
-background: #1A1A1A;
-width: 23%;
-margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 58px;
+    background: #1a1a1a;
+    width: 23%;
+    margin-top: 1.5rem;
   }
 }
