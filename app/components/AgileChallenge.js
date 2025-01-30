@@ -6,26 +6,30 @@ import Image from "@/node_modules/next/image";
 import ScrollAnimation from "@/node_modules/react-animate-on-scroll";
 import "animate.css/animate.compat.css";
 const sprintStages = [
-  {
-    number: "2",
-    title: "Weeks",
-    description: "discovery and research",
-  },
-  {
-    number: "3",
-    title: "weeks",
-    description: "Ideation & Prototyping",
-  },
-  {
-    number: "4",
-    title: "Weeks",
-    description: "Development and Integration",
-  },
-  {
-    number: "3",
-    title: "weeks",
-    description: "Testing and Launch",
-  },
+  "/assets/ag1.png",
+  "/assets/ag2.png",
+  "/assets/ag3.png",
+  "/assets/ag4.png",
+  // {
+  //   number: "2",
+  //   title: "Weeks",
+  //   description: "discovery and research",
+  // },
+  // {
+  //   number: "3",
+  //   title: "weeks",
+  //   description: "Ideation & Prototyping",
+  // },
+  // {
+  //   number: "4",
+  //   title: "Weeks",
+  //   description: "Development and Integration",
+  // },
+  // {
+  //   number: "3",
+  //   title: "weeks",
+  //   description: "Testing and Launch",
+  // },
 ];
 
 export default function AgileChallenge() {
@@ -117,27 +121,33 @@ export default function AgileChallenge() {
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOut="fadeInUp" animateOnce>
-          <div className={styles.challenge__timeline}>
-            <Image
+          {/* <div className={styles.challenge__timeline}> */}
+            {/* <Image
               src={"/assets/cards.png"}
               layout={"responsive"}
               width={1000}
               height={100}
-            />
-          </div>
-        </ScrollAnimation>
-        {/* <div className={styles.challenge__timeline}>
+            /> */}
+        <div className={styles.challenge__timeline}>
           {sprintStages.map((stage, index) => (
-            <div key={index} className={styles.challenge__stage}>
-              <div className={styles.challenge__stageContent}>
-                <span className={styles.challenge__stageNumber}>{stage.number}</span>
+            <div key={index} className={styles.challenge__animCard}>
+              {/* <div className={styles.challenge__stageContent}> */}
+                {/* <span className={styles.challenge__stageNumber}>{stage.number}</span>
                 <span className={styles.challenge__stageTitle}>{stage.title}</span>
-                <p className={styles.challenge__stageDesc}>{stage.description}</p>
-              </div>
-              <ArrowUpRight className={styles.challenge__arrow} />
+                <p className={styles.challenge__stageDesc}>{stage.description}</p> */}
+                 <Image
+              src={stage}
+              layout={"responsive"}
+              width={100}
+              height={100}
+            />
+              {/* </div> */}
+              {/* <ArrowUpRight className={styles.challenge__arrow} /> */}
             </div>
           ))}
-        </div> */}
+        {/* </div> */}
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
