@@ -1,0 +1,168 @@
+.homeContainer {
+  font-family: Rubik, sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+.heroSection {
+  height: 100vh;
+  background: var(--deep-black);
+  width: 100vw;
+  color: white;
+  padding: 0 10% 0 10%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 18vh;
+  align-items: center;
+}
+
+.heroSectionLogo {
+  font-size: 43px;
+}
+
+.heroSectionOptions {
+  font-size: 21px;
+  display: flex;
+  gap: 33.5px;
+}
+
+.heroSectionOptions > div {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.heroSectionOptions > div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust for spacing */
+  width: 100%;
+  height: 2px; /* Thickness of underline */
+  background-color: currentColor; /* Matches text color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heroSectionOptions > div:hover::after {
+  transform: scaleX(1);
+}
+
+.heroSectionMainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.heroSectionMainSectionTitleContainer {
+  margin-bottom: 48px;
+}
+
+.heroSectionMainSectionTitle {
+  display: flex;
+  align-items: flex-end;
+}
+
+.arrowDownSection {
+  position: absolute;
+  bottom: 0;
+  right: 18%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  /* 50% {
+    transform: translateY(-20px);
+  } */
+  100% {
+    transform: translateY(-20px);
+  }
+}
+/* 
+.flySection {
+  padding: 10%;
+  height: 100vh;
+}
+
+.flySectionContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.flySectionMobileSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flySectionMobileSection > img {
+}
+
+.flySectionTextContainer {
+  width: 100%;
+  background: #161616;
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+} */
+.flySection {
+  padding: 110px 10%;
+  /* height: 80vh; */
+}
+
+.flySectionContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.flySectionImageSection {
+  width: 100%;
+  height: 100%;
+}
+
+.flySectionMobileSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flySectionMobileSection > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flySectionTextContainer {
+  width: 100%;
+  background: #161616;
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
