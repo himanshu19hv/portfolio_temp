@@ -26,7 +26,7 @@ export default function Header() {
 
           <div className={styles.header__links}>
             <Link href="/" className={styles.header__link} target={"__parent"}>Work</Link>
-            <Link href="https://drive.google.com/file/d/1z9TsNID08aHqPKqkVixIAq-EVV_0xAVh/view?usp=sharing" className={styles.header__link} target={"__blank"}>Resume</Link>
+            <Link href="https://drive.google.com/file/d/1b7HSw7QsOKilLkUI7nltVTieTNL7PGWB/view?usp=sharing" className={styles.header__link} target={"__blank"}>Resume</Link>
             <Link href="https://left-business-498772.framer.app/About" className={styles.header__link} target={"__blank"}>About</Link>
             <Link href="https://left-business-498772.framer.app/Contact" className={styles.header__link} target={"__blank"}>Contact</Link>
           </div>
