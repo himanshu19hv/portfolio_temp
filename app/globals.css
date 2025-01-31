@@ -81,3 +81,15 @@ body {
   height: 100%;
   object-fit: cover; /* Ensures video fills the screen */
 }
+.mobileScreen {
+  height: 100dvh;
+  width: 100vw;
+  color: white;
+  padding: 0 10% 0 10%;
+  position: relative;
+  background-image: url("/assets/gifVideo.gif");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
