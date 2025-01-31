@@ -1,14 +1,5 @@
 import React from "react";
 import "./home.css";
-// import Symbol from "../../public/assets/symbol.svg";
-// /assets/symbol.svg";
-// import companies from "../../public/assets/companies.png";
-// import ArrowDown from "../../public/assets/arrowDown.svg";
-// import economic from "../../public/assets/economic.png";
-// import DSC09188 from "../../public/assets/DSC09188.png";
-// import GradeBg from "../../public/assets/gradBg.png";
-// import iPhone15Pro from "../../public/assets/iPhone15Pro.png";
-// import mobile from "../../public/assets/mobile.png";
 import { TypeAnimation } from "react-type-animation";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.compat.css";
