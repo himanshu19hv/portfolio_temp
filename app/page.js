@@ -29,7 +29,7 @@ export default function Home() {
       ) : (
         <div className="mobileScreen">
           <TypeAnimation
-            sequence={["view this on desktop for better experience."]}
+            sequence={["You're in the Matrix, but not like this… Switch to your computer for the full experience. See you on the other side :)"]}
             wrapper="span"
             speed={70}
             style={{ color: "#00FF00", fontSize: 20 }}
