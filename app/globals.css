@@ -66,3 +66,18 @@ body {
 .section {
   padding: var(--section-padding);
 }
+.video-container {
+  position: fixed; /* Stays fixed on the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Send it behind other content */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the screen */
+}

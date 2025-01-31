@@ -48,8 +48,10 @@ function HomePage() {
         <div className="heroSectionMainSection">
           <div className="heroSectionMainSectionTitleContainer">
             <div className="heroSectionMainSectionTitle">
-              <div style={{ fontSize: "72px", fontWeight: "500" }}>utkarsh</div>
-              <div
+              <div style={{ fontSize: "72px", fontWeight: "500" }}>
+                hi, i'm utkarsh
+              </div>
+              {/* <div
                 style={{
                   fontSize: "20px",
                   fontStyle: "italic",
@@ -58,7 +60,7 @@ function HomePage() {
                 }}
               >
                 (product manager)
-              </div>
+              </div> */}
             </div>
             <div
               style={{
@@ -82,25 +84,27 @@ function HomePage() {
             </div>
 
             <div style={{ marginBottom: "40px", maxWidth: "940px" }}>
-              <div style={{ marginBottom: "1rem" }}>
+              <div style={{ marginBottom: "1rem", width: "93%" }}>
                 <TypeAnimation
                   sequence={[
-                    "Crafting delightful experiences for the past 5 years in the consumer and enterprise domain",
+                    "crafting delightful experiences for the past 5 years in the consumer and enterprise domain     i'm currently working as a product and design guy at leverageedu, accelerating monetization and brewing awesome experiences for its users from around the globe.",
                   ]}
                   wrapper="span"
                   speed={70}
+                  style={{ color: "#00FF00" }}
                 />
               </div>
-              <div>
+              {/* <div>
                 <TypeAnimation
                   sequence={[
                     3000,
-                    "I'm currently working as a Product and Design Guy at LeverageEdu, accelerating monetization and brewing awesome experiences for its users from around the globe.",
+                    "i'm currently working as a product and design guy at leverageedu, accelerating monetization and brewing awesome experiences for its users from around the globe.",
                   ]}
                   wrapper="span"
                   speed={70}
+                  style={{color: "#00FF00"}}
                 />
-              </div>
+              </div> */}
             </div>
 
             <div>
@@ -227,7 +231,9 @@ function HomePage() {
                     cursor: "pointer",
                   }}
                 >
-                  Request case study →
+                  <Link href={"/work"} target={"_blank"}>
+                    Request case study →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -254,7 +260,7 @@ function HomePage() {
             <div
               style={{
                 maxWidth: "50%",
-                padding: "64px 94px",
+                padding: "20px 94px",
                 display: "flex",
                 flexDirection: "column",
                 gap: "40px",
@@ -289,7 +295,14 @@ function HomePage() {
                   cursor: "pointer",
                 }}
               >
-                Request case study →
+                <Link
+                  href={
+                    "https://www.figma.com/proto/F0vcr7MC6MEmx9kb7pqpAX/MembersBenefits_DiscoverActivation?page-id=39%3A18022&node-id=144-80292&viewport=-1355%2C744%2C0.18&t=TIb5qCnCUzIJ5ZI9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=144%3A80292"
+                  }
+                  target={"_blank"}
+                >
+                  Request case study →
+                </Link>
               </div>
             </div>
             <div
@@ -319,7 +332,7 @@ function HomePage() {
             <div
               style={{
                 maxWidth: "50%",
-                padding: "64px 94px",
+                padding: "20px 94px",
                 display: "flex",
                 flexDirection: "column",
                 gap: "40px",
@@ -330,6 +343,7 @@ function HomePage() {
                 style={{
                   fontWeight: 700,
                   fontSize: "24px",
+                  color: "#606060",
                 }}
               >
                 Revamping the Payment Experience @ Cleartrip for reduced drop
@@ -345,16 +359,25 @@ function HomePage() {
                 tackle a pressing issue: a staggering 45% drop-off rate during
                 the payment process.
               </div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "500",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
+              <Link
+                href={
+                  "https://www.figma.com/proto/AaHU2t1WEMeJGvbdhi2kk7/Payments-page-Revamp?page-id=1517%3A56651&node-id=1826-1845&viewport=642%2C238%2C0.03&t=OMDZ2pLSEfY6l7d7-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1826%3A1845"
+                }
+                target={"_blank"}
               >
-                Request case study →
-              </div>
+                <div
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "500",
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                    color: "#606060",
+                    paddingBottom: 12,
+                  }}
+                >
+                  Request case study →
+                </div>
+              </Link>
             </div>
             <div
               style={{
@@ -428,15 +451,20 @@ function HomePage() {
                   <br /> & Pictures helps me share them
                 </div>
               </div>
-              <div
-                style={{
-                  fontSize: "18px",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
+              <Link
+                href={"https://left-business-498772.framer.app/Archives"}
+                target={"_blank"}
               >
-                Delight to your eyes →
-              </div>
+                <div
+                  style={{
+                    fontSize: "18px",
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                  }}
+                >
+                  Delight to your eyes →
+                </div>
+              </Link>
             </div>
           </section>
         </ScrollAnimation>
@@ -459,10 +487,21 @@ function HomePage() {
             © Utkarsh Raj, 2023
           </div>
           <div className="heroSectionOptions">
-            <div>Linkedin</div>
-            <div>Medium</div>
-            <div>Behance</div>
-            <div>Dribbble</div>
+            <Link
+              href="linkedin.com/in/utkarsh-raj-299386191"
+              target={"__blank"}
+            >
+              LinkedIn
+            </Link>
+            <Link href="https://medium.com/@utkarshraj7540" target={"__blank"}>
+              Medium
+            </Link>
+            <Link href="https://www.behance.net/utkarshraj1" target={"__blank"}>
+              Behance
+            </Link>
+            <Link href="https://dribbble.com/utkarshraj7540" target={"__blank"}>
+              Dribble
+            </Link>
           </div>
         </nav>
       </div>
