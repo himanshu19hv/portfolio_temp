@@ -24,6 +24,7 @@ nav {
 
 .heroSectionLogo {
   font-size: 43px;
+  cursor: pointer;
 }
 
 .heroSectionOptions {

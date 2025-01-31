@@ -19,7 +19,9 @@ function HomePage() {
     <div className="homeContainer">
       <section className="heroSection">
         <nav>
-          <div className="heroSectionLogo">ut.</div>
+          <Link href="/">
+            <div className="heroSectionLogo">ut.</div>
+          </Link>
           <div className="heroSectionOptions">
             <Link href="/work" target={"__parent"}>
               Work
